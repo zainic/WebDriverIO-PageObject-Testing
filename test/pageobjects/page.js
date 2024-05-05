@@ -10,6 +10,14 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open (path) {
-        return browser.url(`https://the-internet.herokuapp.com/${path}`)
+        return browser.url(`https://www.chocochips.co.id${path}`)
+    }
+
+    wait(ms) {
+        return browser.pause(ms)
+    }
+
+    scroll(x, y) {
+        return browser.scroll(x, y)
     }
 }
